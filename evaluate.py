@@ -104,6 +104,13 @@ def run_evaluation():
             for r in results:
                 writer.writerow({k: r[k] for k in writer.fieldnames})
 
+        #outputs
+        print("\nAverages across all 10 scenarios are : ")
+        for k, v in averages.items():
+            print(f"  {k}: {v}")
+        print(f"\nFull report (metric definitions + generated emails): {OUTPUT_JSON}")
+        print(f"Spreadsheet scores: {OUTPUT_CSV}")
+
 
 if __name__ == "__main__":
     run_evaluation()
