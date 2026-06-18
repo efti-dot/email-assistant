@@ -12,7 +12,7 @@ def _keywords(line: str) -> list:
     words = re.findall(r"[a-zA-Z0-9#%']+", line.lower())
     return [w for w in words if w not in _STOPWORDS and len(w) > 1]
 
-
+#Custom Metric 1: Fact Recall (rule-based)
 def fact_recall_score(generated_email: str, facts_text: str) -> float:
     fact_lines = [f.strip() for f in facts_text.strip().split("\n") if f.strip()]
     if not fact_lines:
@@ -32,6 +32,7 @@ def fact_recall_score(generated_email: str, facts_text: str) -> float:
     return round(recalled / len(fact_lines), 2)
 
 
+#Custom Metric 2: Tone Accuracy (LLM-as-Judge)
 def tone_accuracy_score(generated_email: str, requested_tone: str, api_key: str) -> float:
     judge_prompt = f"""demo prompt"""
     response = call_gemini(judge_prompt, api_key)
