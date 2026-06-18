@@ -32,6 +32,7 @@ def screen():
         api_key = st.text_input(
             "Gemini API Key",
             type="password",
+            value=os.getenv("GEMINI_API_KEY", "")
         )
         st.caption("Your key is used only for this session and is never stored.")
 
