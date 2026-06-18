@@ -30,3 +30,11 @@ def fact_recall_score(generated_email: str, facts_text: str) -> float:
             recalled += 1
  
     return round(recalled / len(fact_lines), 2)
+
+
+def tone_accuracy_score(generated_email: str, requested_tone: str, api_key: str) -> float:
+    judge_prompt = f"""demo prompt"""
+    response = call_gemini(judge_prompt, api_key)
+    match = re.search(r"[1-5]", response)
+    score = int(match.group()) if match else 3
+    return round(score / 5, 2)
