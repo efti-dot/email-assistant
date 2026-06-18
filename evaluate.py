@@ -4,12 +4,14 @@ import json
 from generator import generate_email
 from metrics import fact_recall_score, tone_accuracy_score, conciseness_clarity_score
 from datetime import datetime
+import csv
 
 load_dotenv()
 
 API_KEY = os.getenv("GEMINI_API_KEY")
 SCENARIOS_PATH = "scenarios.json"
 OUTPUT_JSON = "evaluation_results.json"
+OUTPUT_CSV = "evaluation_results.csv"
 
 
 METRIC_DEFINITIONS = {
@@ -88,8 +90,19 @@ def run_evaluation():
         "averages": averages,
         }
 
+        #json
         with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
             json.dump(report, f, indent=2)
+
+        #csv
+        with open(OUTPUT_CSV, "w", newline="", encoding="utf-8") as f:
+            writer = csv.DictWriter(f, fieldnames=[
+                "scenario_id", "intent", "tone",
+                "fact_recall", "tone_accuracy", "conciseness_clarity", "overall"
+            ])
+            writer.writeheader()
+            for r in results:
+                writer.writerow({k: r[k] for k in writer.fieldnames})
 
 
 if __name__ == "__main__":
