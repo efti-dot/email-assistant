@@ -35,6 +35,8 @@ def run_evaluation():
         cc = conciseness_clarity_score(generated_email, sc["human_reference_email"], API_KEY)
         overall = round((fr + ta + cc) / 3, 2)
 
+        print(f"fact_recall={fr} tone_accuracy={ta} conciseness_clarity={cc} overall={overall}")
+
 
 if __name__ == "__main__":
     run_evaluation()
