@@ -3,19 +3,9 @@ import os
 from google import genai
 from prompts import build_prompt
 from dotenv import load_dotenv
+from generator import generate_email
 
 load_dotenv()
-
-DEFAULT_MODEL = "gemini-2.5-flash"
-
-#generating email
-def generate_email(prompt: str, api_key: str, model: str = DEFAULT_MODEL) -> str:
-    client = genai.Client(api_key=api_key)
-    response = client.models.generate_content(
-        model=model,
-        contents=prompt,
-    )
-    return response.text.strip()
 
 def screen():
     st.set_page_config(
@@ -79,8 +69,7 @@ def screen():
         with st.spinner("Generating email..."):
             #st.write("This is youe email")
             try:
-                prompt = build_prompt(intent, key_facts, tone)
-                email = generate_email(prompt, api_key)
+                email, prompt = generate_email(intent, key_facts, tone, api_key)
                 st.session_state["generated_email"] = email
                 st.session_state["last_prompt"] = prompt
             except Exception as e:
