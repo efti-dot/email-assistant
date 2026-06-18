@@ -1,5 +1,17 @@
 import streamlit as st
 import os
+from google import genai
+
+DEFAULT_MODEL = "gemini-2.5-flash"
+
+#generating email
+def generate_email(prompt: str, api_key: str, model: str = DEFAULT_MODEL) -> str:
+    client = genai.Client(api_key=api_key)
+    response = client.models.generate_content(
+        model=model,
+        contents=prompt,
+    )
+    return response.text.strip()
 
 def screen():
     st.set_page_config(
@@ -60,7 +72,11 @@ def screen():
             return
         
         with st.spinner("Generating email..."):
-            st.write("This is youe email")
+            #st.write("This is youe email")
+            try:
+                email = generate_email("demo prompt", api_key)
+            except Exception as e:
+                st.error("Error:{e}")
 
 
 
