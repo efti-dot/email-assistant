@@ -30,12 +30,26 @@ def run_evaluation():
             api_key=API_KEY,
         )
 
-        fr = fact_recall_score(generated_email, sc["facts"])
-        ta = tone_accuracy_score(generated_email, sc["tone"], API_KEY)
-        cc = conciseness_clarity_score(generated_email, sc["human_reference_email"], API_KEY)
-        overall = round((fr + ta + cc) / 3, 2)
+        frs = fact_recall_score(generated_email, sc["facts"])
+        tas = tone_accuracy_score(generated_email, sc["tone"], API_KEY)
+        ccs = conciseness_clarity_score(generated_email, sc["human_reference_email"], API_KEY)
+        overall = round((frs + tas + ccs) / 3, 2)
 
-        print(f"fact_recall={fr} tone_accuracy={ta} conciseness_clarity={cc} overall={overall}")
+        print(f"fact_recall={frs} tone_accuracy={tas} conciseness_clarity={ccs} overall={overall}")
+
+        #appending all the result togather
+        results.append({
+            "scenario_id": sc["id"],
+            "intent": sc["intent"],
+            "tone": sc["tone"],
+            "generated_email": generated_email,
+            "fact_recall": frs,
+            "tone_accuracy": tas,
+            "conciseness_clarity": ccs,
+            "overall": overall,
+        })
+        n = len(results)
+        
 
 
 if __name__ == "__main__":
