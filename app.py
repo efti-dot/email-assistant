@@ -1,6 +1,7 @@
 import streamlit as st
 import os
 from google import genai
+from prompts import build_prompt
 
 DEFAULT_MODEL = "gemini-2.5-flash"
 
@@ -74,7 +75,8 @@ def screen():
         with st.spinner("Generating email..."):
             #st.write("This is youe email")
             try:
-                email = generate_email("demo prompt", api_key)
+                prompt = build_prompt(intent, key_facts, tone)
+                email = generate_email(prompt, api_key)
             except Exception as e:
                 st.error("Error:{e}")
 
