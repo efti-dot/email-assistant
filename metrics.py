@@ -38,3 +38,21 @@ def tone_accuracy_score(generated_email: str, requested_tone: str, api_key: str)
     match = re.search(r"[1-5]", response)
     score = int(match.group()) if match else 3
     return round(score / 5, 2)
+
+
+#Custom Metric 3: Conciseness & Clarity (Hybrid)
+def conciseness_clarity_score(generated_email: str, reference_email: str, api_key: str) -> float:
+    gen_len = len(generated_email.split())
+    ref_len = max(len(reference_email.split()), 1)
+    ratio = gen_len / ref_len
+    length_score = max(0.0, 1 - abs(1 - ratio))
+ 
+    judge_prompt = f"""Rate the CLARITY of the email. 
+Email:
+{generated_email}
+"""
+    response = call_gemini(judge_prompt, api_key)
+    match = re.search(r"[1-5]", response)
+    clarity_score = (int(match.group()) if match else 3) / 5
+ 
+    return round((length_score + clarity_score) / 2, 2)
