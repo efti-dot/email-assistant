@@ -3,6 +3,7 @@ import os
 import json
 from generator import generate_email
 from metrics import fact_recall_score, tone_accuracy_score, conciseness_clarity_score
+from datetime import datetime
 
 load_dotenv()
 
@@ -55,6 +56,10 @@ def run_evaluation():
         "avg_tone_accuracy": round(sum(r["tone_accuracy"] for r in results) / n, 2),
         "avg_conciseness_clarity": round(sum(r["conciseness_clarity"] for r in results) / n, 2),
         "avg_overall": round(sum(r["overall"] for r in results) / n, 2),
+        }
+
+        report = {
+        "generated_at": datetime.now().isoformat()
         }
 
 
