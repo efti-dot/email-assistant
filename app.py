@@ -2,6 +2,9 @@ import streamlit as st
 import os
 from google import genai
 from prompts import build_prompt
+from dotenv import load_dotenv
+
+load_dotenv()
 
 DEFAULT_MODEL = "gemini-2.5-flash"
 
@@ -77,8 +80,21 @@ def screen():
             try:
                 prompt = build_prompt(intent, key_facts, tone)
                 email = generate_email(prompt, api_key)
+                st.session_state["generated_email"] = email
+                st.session_state["last_prompt"] = prompt
             except Exception as e:
                 st.error("Error:{e}")
+                return
+            
+        if "generated_email" in st.session_state:
+            st.subheader("Generated Email")
+            st.text_area(
+                "Result",
+                value=st.session_state["generated_email"],
+                height=300
+            )
+            with st.expander("View the prompt"):
+                st.code(st.session_state["last_prompt"], language="text")
 
 
 
