@@ -11,6 +11,27 @@ API_KEY = os.getenv("GEMINI_API_KEY")
 SCENARIOS_PATH = "scenarios.json"
 
 
+METRIC_DEFINITIONS = {
+    "fact_recall": (
+        "Rule-based. For each supplied key fact, checks whether at least "
+        "60% of its meaningful keywords appear in the generated email. "
+        "Score = (facts recalled) / (total facts). Tolerant of paraphrasing, "
+        "catches dropped or hallucinated facts."
+    ),
+    "tone_accuracy": (
+        "LLM-as-Judge. A separate Gemini call rates 1-5 how well the "
+        "email's actual writing style (not just a tone label) matches the "
+        "requested tone. Score = rating / 5."
+    ),
+    "conciseness_clarity": (
+        "Hybrid. Averages (a) a length-ratio score comparing the generated "
+        "email's word count to the human reference email's word count, and "
+        "(b) an LLM-as-Judge rating (1-5) of how clear and well-structured "
+        "the email is, independent of length."
+    ),
+}
+
+
 def run_evaluation():
     #print("Evaluating...")
     if not API_KEY:
@@ -59,7 +80,11 @@ def run_evaluation():
         }
 
         report = {
-        "generated_at": datetime.now().isoformat()
+        "generated_at": datetime.now().isoformat(),
+        "model": "gemini-2.5-flash",
+        "metric_definitions": METRIC_DEFINITIONS,
+        "results": results,
+        "averages": averages,
         }
 
 
