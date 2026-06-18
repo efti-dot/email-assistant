@@ -84,7 +84,7 @@ def screen():
                 st.session_state["generated_email"] = email
                 st.session_state["last_prompt"] = prompt
             except Exception as e:
-                st.error("Error:{e}")
+                st.error(f"Error:{e}")
                 return
             
         if "generated_email" in st.session_state:
