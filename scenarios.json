@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "intent": "Follow up after meeting",
+    "facts": "Meeting held on June 10th to discuss Q3 marketing budget\nClient requested a detailed breakdown of the proposed ad spend\nNext step is to send the updated proposal by Friday, June 19th",
+    "tone": "Formal",
+    "human_reference_email": "Dear Mr. Ahmed,\n\nThank you for taking the time to meet with me on June 10th to discuss the Q3 marketing budget. I appreciated the opportunity to walk through our initial recommendations and hear your team's priorities firsthand.\n\nAs requested, I will prepare a detailed breakdown of the proposed ad spend across each channel and will send over the updated proposal by Friday, June 19th, for your review.\n\nPlease let me know if there is any additional information you would like included before then.\n\nBest regards,\nSarah Chen"
+  },
+  {
+    "id": 2,
+    "intent": "Request for proposal details",
+    "facts": "Proposal was received on June 12th for the office renovation project\nPricing section does not specify a timeline for completion\nNeed clarification on whether the quote includes materials or labor only",
+    "tone": "Professional",
+    "human_reference_email": "Dear Mr. Rahman,\n\nThank you for submitting your proposal for the office renovation project on June 12th. We've reviewed it closely and have a couple of questions before moving forward.\n\nCould you clarify whether the quoted price covers materials and labor combined, or labor only? It would also help to have an estimated completion timeline included, as this wasn't specified in the current draft.\n\nWe look forward to your response so we can proceed with next steps.\n\nRegards,\nImran Hossain"
+  },
+  {
+    "id": 3,
+    "intent": "Apology for late delivery",
+    "facts": "Order #4521 was due on June 5th but shipped on June 14th\nDelay was caused by a supplier shortage of raw materials\nA 15% discount has been applied to the customer's next order as compensation",
+    "tone": "Empathetic",
+    "human_reference_email": "Dear Ms. Karim,\n\nI want to personally apologize for the delay with Order #4521. It was scheduled to arrive by June 5th, but due to an unexpected shortage of raw materials from our supplier, it didn't ship until June 14th. I understand how frustrating that wait must have been, especially without any updates from our end.\n\nTo make this right, we've applied a 15% discount to your next order. We genuinely value your business and are taking steps internally to prevent this kind of delay going forward.\n\nThank you for your patience, and please don't hesitate to reach out if there's anything else I can help with.\n\nWarm regards,\nTasnim Akter"
+  },
+  {
+    "id": 4,
+    "intent": "Urgent server outage notification",
+    "facts": "Production servers went down at 2:14 AM due to a database failover error\nEngineering team is actively working on a fix, ETA 30 minutes\nCustomer-facing status page has been updated with live progress",
+    "tone": "Urgent",
+    "human_reference_email": "Hi team,\n\nWe have an active incident: production servers went down at 2:14 AM due to a database failover error. Engineering is on it right now, with an estimated fix time of 30 minutes.\n\nThe status page has already been updated so customers can track progress in real time. Please hold off on any non-essential deploys until this is resolved, and ping me directly if you notice anything new.\n\nWill send another update the moment it's fixed.\n\nThanks,\nDev"
+  },
+  {
+    "id": 5,
+    "intent": "Persuasive partnership pitch",
+    "facts": "Company X has 2 million monthly active users in the fitness app space\nA co-marketing campaign could be launched within 3 weeks\nSimilar partnerships have driven a 22% increase in user acquisition for past partners",
+    "tone": "Persuasive",
+    "human_reference_email": "Hi Daniel,\n\nI think there's a real opportunity for our companies to work together. With over 2 million monthly active users in the fitness space, your platform reaches exactly the audience we're trying to grow with.\n\nWe could realistically launch a joint co-marketing campaign within three weeks, and based on results from similar partnerships, we've seen user acquisition increase by as much as 22% for the partners involved.\n\nI'd love to set up a short call this week to walk through a few campaign ideas -- I think you'll see the potential right away.\n\nBest,\nPriya Nair"
+  },
+  {
+    "id": 6,
+    "intent": "Casual reminder to team about deadline",
+    "facts": "The Q3 report draft is due this Friday\nMarketing and finance sections still need final numbers\nQuick sync call is scheduled for tomorrow at 10am to review",
+    "tone": "Casual",
+    "human_reference_email": "Hey everyone,\n\nJust a quick heads up -- the Q3 report draft is due this Friday! We're still missing the final numbers for the marketing and finance sections, so if you've got those, please send them over soon.\n\nWe've also got a quick sync call tomorrow at 10am to go over everything together, so come ready with any updates.\n\nThanks for staying on top of this!\n\nCheers,\nAlex"
+  },
+  {
+    "id": 7,
+    "intent": "Formal complaint about service issue",
+    "facts": "Internet service has had 5 outages in the past two weeks\nTwo support tickets (#88213 and #88340) remain unresolved after 10 days\nCustomer is requesting a service credit and a resolution timeline",
+    "tone": "Formal",
+    "human_reference_email": "Dear Customer Support Team,\n\nI am writing to formally raise concerns regarding the reliability of my internet service. Over the past two weeks, I have experienced five separate outages, significantly disrupting my work.\n\nIn addition, two support tickets I submitted, #88213 and #88340, remain unresolved after ten days without any meaningful update.\n\nI would appreciate a service credit for the disruption caused, as well as a clear timeline for resolving these outstanding tickets. Please treat this matter with urgency.\n\nSincerely,\nFarhan Islam"
+  },
+  {
+    "id": 8,
+    "intent": "Friendly check-in with a client",
+    "facts": "It has been three months since the client's onboarding was completed\nNew feature (automated reporting) launched last week that may help their workflow\nOffering a free 15-minute call to walk through the new feature",
+    "tone": "Friendly",
+    "human_reference_email": "Hi Lisa,\n\nIt's been about three months since we wrapped up your onboarding, and I just wanted to check in and see how everything's going on your end!\n\nAlso wanted to flag that we launched automated reporting last week -- I think it could really streamline some of the manual work your team's been doing. Happy to hop on a quick 15-minute call to show you how it works, totally free, no pressure at all.\n\nLet me know if you're interested, and have a great week!\n\nBest,\nMaria"
+  },
+  {
+    "id": 9,
+    "intent": "Professional introduction to new point of contact",
+    "facts": "Taking over as the new account manager starting next Monday\nPrevious account manager, John, will be transitioning to a different team\nWill reach out to schedule an introductory call within the first week",
+    "tone": "Professional",
+    "human_reference_email": "Dear Mr. Hasan,\n\nI wanted to personally introduce myself as your new account manager, effective next Monday. John, who has managed your account until now, will be transitioning to a different team, but he has ensured a thorough handover so there's no disruption to your service.\n\nI'll be reaching out within the first week to schedule an introductory call so we can go over your current setup and any priorities going forward.\n\nLooking forward to working together.\n\nBest regards,\nNadia Chowdhury"
+  },
+  {
+    "id": 10,
+    "intent": "Empathetic update about team restructuring",
+    "facts": "Company is restructuring the design department, effective July 1st\nThree positions will be affected; affected employees will be notified individually\nSeverance packages and career transition support will be provided to those impacted",
+    "tone": "Empathetic",
+    "human_reference_email": "Dear Team,\n\nI want to share some difficult news directly and honestly. As part of a broader restructuring of the design department, effective July 1st, three positions will unfortunately be affected. Each impacted employee will be notified individually and with as much care as we can offer.\n\nFor those affected, we will be providing severance packages along with career transition support to help with next steps.\n\nI know this is hard to hear, and I'm here if you have questions or just need to talk. We'll get through this together as a team.\n\nWith sincere appreciation for all of you,\nRobert Kim"
+  }
+]
