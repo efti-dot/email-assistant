@@ -9,6 +9,7 @@ load_dotenv()
 
 API_KEY = os.getenv("GEMINI_API_KEY")
 SCENARIOS_PATH = "scenarios.json"
+OUTPUT_JSON = "evaluation_results.json"
 
 
 METRIC_DEFINITIONS = {
@@ -86,6 +87,9 @@ def run_evaluation():
         "results": results,
         "averages": averages,
         }
+
+        with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
+            json.dump(report, f, indent=2)
 
 
 if __name__ == "__main__":
