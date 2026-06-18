@@ -41,11 +41,15 @@ def screen():
     )
 
     # Generate Button
-    if st.button("Generate Email"):
+    if st.button("Generate Email", use_container_width=True):
         if not intent.strip():
             st.warning("Please enter an intent.")
-        elif not key_facts.strip():
+            return
+        
+        if not key_facts.strip():
             st.warning("Please enter at least one key fact.")
+            return
+        
         with st.spinner("Generating email..."):
             st.write("This is youe email")
 
