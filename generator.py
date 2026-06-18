@@ -1,7 +1,8 @@
 from prompts import build_prompt
 from google import genai
+from openai import OpenAI
 
-DEFAULT_MODEL = "gemini-2.5-flash"
+DEFAULT_MODEL = "gpt-4o-mini"
 
 #model call
 def call_gemini(prompt: str, api_key: str, model: str = DEFAULT_MODEL) -> str:

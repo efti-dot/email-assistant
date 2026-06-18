@@ -84,7 +84,7 @@ def run_evaluation():
 
         report = {
         "generated_at": datetime.now().isoformat(),
-        "model": "gemini-2.5-flash",
+        "model": "gemini-2.5-flash-lite",
         "metric_definitions": METRIC_DEFINITIONS,
         "results": results,
         "averages": averages,
