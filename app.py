@@ -10,6 +10,15 @@ def screen():
     st.title("Email Generation Assistant")
     st.write("Generate professional emails using Gemini AI.")
 
+    #sidebar for api key
+    with st.sidebar:
+        st.header("Settings")
+        api_key = st.text_input(
+            "Gemini API Key",
+            type="password",
+        )
+        st.caption("Your key is used only for this session and is never stored.")
+
     #intent input
     intent = st.text_input(
         "Intent",
