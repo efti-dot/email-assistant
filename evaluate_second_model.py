@@ -3,6 +3,8 @@ from openai import OpenAI
 from dotenv import load_dotenv
 import os
 import json
+import datetime
+import csv
 
 load_dotenv()
 API_KEY = os.getenv("OPENAI_API_KEY")
@@ -84,4 +86,33 @@ def run_evaluation():
             "avg_overall":             round(sum(r["overall"] for r in results) / n, 2),
     }
 
-    
+    report = {
+        "generated_at":       datetime.now().isoformat(),
+        "model":              "gpt-4o-mini",
+        "prompt_strategy":    "Simple (Role-Play + CoT, no per-tone guide)",
+        "metric_definitions": METRIC_DEFINITIONS,
+        "results":            results,
+        "averages":           averages,
+    }
+ 
+    with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
+        json.dump(report, f, indent=2)
+ 
+    with open(OUTPUT_CSV, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=[
+            "scenario_id", "intent", "tone",
+            "fact_recall", "tone_accuracy", "conciseness_clarity", "overall"
+        ])
+        writer.writeheader()
+        for r in results:
+            writer.writerow({k: r[k] for k in writer.fieldnames})
+ 
+    print("\n=== Model B Averages ===")
+    for k, v in averages.items():
+        print(f"  {k}: {v}")
+    print(f"\nFull report : {OUTPUT_JSON}")
+    print(f"CSV scores  : {OUTPUT_CSV}")
+
+
+if __name__ == "__main__":
+    run_evaluation()
