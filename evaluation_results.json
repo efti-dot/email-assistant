@@ -1,0 +1,117 @@
+{
+  "generated_at": "2026-06-19T12:40:26.470020",
+  "model": "gpt-4o-mini",
+  "metric_definitions": {
+    "fact_recall": "Rule-based. For each supplied key fact, checks whether at least 60% of its meaningful keywords appear in the generated email. Score = (facts recalled) / (total facts). Tolerant of paraphrasing, catches dropped or hallucinated facts.",
+    "tone_accuracy": "LLM-as-Judge. A separate Gemini call rates 1-5 how well the email's actual writing style (not just a tone label) matches the requested tone. Score = rating / 5.",
+    "conciseness_clarity": "Hybrid. Averages (a) a length-ratio score comparing the generated email's word count to the human reference email's word count, and (b) an LLM-as-Judge rating (1-5) of how clear and well-structured the email is, independent of length."
+  },
+  "results": [
+    {
+      "scenario_id": 1,
+      "intent": "Follow up after meeting",
+      "tone": "Formal",
+      "generated_email": "Subject: Follow-Up on Meeting Regarding Q3 Marketing Budget\n\nDear [Client's Name],\n\nI hope this message finds you well. I am writing to follow up on our meeting held on June 10th, during which we discussed the Q3 marketing budget.\n\nAs per your request, I will be preparing a detailed breakdown of the proposed advertising spend. Please note that the updated proposal will be sent to you by Friday, June 19th. Should you have any further questions or require additional information in the meantime, please do not hesitate to reach out.\n\nThank you for your attention to this matter.\n\nSincerely,  \n[Your Name]  \n[Your Position]  \n[Your Company]  \n[Your Contact Information]",
+      "fact_recall": 1.0,
+      "tone_accuracy": 1.0,
+      "conciseness_clarity": 0.89,
+      "overall": 0.96
+    },
+    {
+      "scenario_id": 2,
+      "intent": "Request for proposal details",
+      "tone": "Professional",
+      "generated_email": "Subject: Clarification on Proposal Details for Office Renovation\n\nDear [Recipient's Name],\n\nI hope this message finds you well. I\u2019m reaching out regarding the proposal we received on June 12th for the office renovation project.\n\nI noticed that the pricing section does not specify a timeline for completion. Additionally, could you please clarify whether the quote includes materials or labor only? This information will help us move forward effectively.\n\nThank you for your assistance. I look forward to your prompt response.\n\nBest regards,  \n[Your Name]  \n[Your Position]  \n[Your Contact Information]",
+      "fact_recall": 1.0,
+      "tone_accuracy": 1.0,
+      "conciseness_clarity": 0.94,
+      "overall": 0.98
+    },
+    {
+      "scenario_id": 3,
+      "intent": "Apology for late delivery",
+      "tone": "Empathetic",
+      "generated_email": "Subject: Our Sincere Apologies for the Delay\n\nDear [Customer's Name],\n\nI hope this message finds you well. I want to take a moment to sincerely apologize for the delay in delivering your order #4521, which was due on June 5th but unfortunately shipped on June 14th. I understand how frustrating this may have been for you, and I truly appreciate your patience during this time.\n\nThe delay was caused by a supplier shortage of raw materials, which was beyond our control. To make amends for the inconvenience this has caused, we have applied a 15% discount to your next order. We value your business and want to ensure you feel supported moving forward.\n\nThank you for your understanding, and please don\u2019t hesitate to reach out if you have any further questions or concerns.\n\nWarm regards,\n\n[Your Name]  \n[Your Position]  \n[Your Contact Information]  \n[Your Company Name]",
+      "fact_recall": 1.0,
+      "tone_accuracy": 0.8,
+      "conciseness_clarity": 0.85,
+      "overall": 0.88
+    },
+    {
+      "scenario_id": 4,
+      "intent": "Urgent server outage notification",
+      "tone": "Urgent",
+      "generated_email": "Subject: Urgent: Server Outage Notification\n\nDear Team,\n\nWe are experiencing a server outage. Production servers went down at 2:14 AM due to a database failover error. The engineering team is actively working on a fix, and we expect resolution within 30 minutes.\n\nPlease note that the customer-facing status page has been updated with live progress. Stay tuned for further updates.\n\nThank you for your understanding.\n\nBest,  \n[Your Name]",
+      "fact_recall": 1.0,
+      "tone_accuracy": 0.8,
+      "conciseness_clarity": 0.93,
+      "overall": 0.91
+    },
+    {
+      "scenario_id": 5,
+      "intent": "Persuasive partnership pitch",
+      "tone": "Persuasive",
+      "generated_email": "Subject: Unlock New Growth Opportunities Together\n\nDear [Recipient's Name],\n\nI hope this message finds you well. I'm reaching out to propose an exciting partnership that could significantly enhance our mutual growth in the fitness app market.\n\nCompany X currently boasts 2 million monthly active users, providing a robust platform for a co-marketing campaign. By collaborating, we can leverage our combined strengths and tap into our user bases effectively. In fact, similar partnerships have previously driven a remarkable 22% increase in user acquisition for past partners. We believe that by launching a campaign within just 3 weeks, we can replicate this success and create substantial value for both of our organizations.\n\nI would love to discuss this opportunity further and explore how we can work together to achieve our goals. Please let me know a convenient time for you to connect.\n\nLooking forward to your response.\n\nBest regards,  \n[Your Name]  \n[Your Position]  \n[Your Contact Information]  \n[Your Company Name]",
+      "fact_recall": 1.0,
+      "tone_accuracy": 0.8,
+      "conciseness_clarity": 0.69,
+      "overall": 0.83
+    },
+    {
+      "scenario_id": 6,
+      "intent": "Casual reminder to team about deadline",
+      "tone": "Casual",
+      "generated_email": "Subject: Quick Reminder About Q3 Report\n\nHey team,\n\nJust a quick reminder that the Q3 report draft is due this Friday. We still need the final numbers for the marketing and finance sections, so let\u2019s make sure we\u2019re all on the same page.\n\nWe\u2019ve got a sync call scheduled for tomorrow at 10am to review everything. Let\u2019s use that time to nail down what we need!\n\nThanks, and see you all then!\n\nCheers,  \n[Your Name]",
+      "fact_recall": 1.0,
+      "tone_accuracy": 0.8,
+      "conciseness_clarity": 0.95,
+      "overall": 0.92
+    },
+    {
+      "scenario_id": 7,
+      "intent": "Formal complaint about service issue",
+      "tone": "Formal",
+      "generated_email": "Subject: Formal Complaint Regarding Internet Service Outages\n\nDear [Recipient's Name],\n\nI am writing to formally express my dissatisfaction with the internet service provided by your company. Over the past two weeks, I have experienced five outages, which have significantly disrupted my activities. \n\nAdditionally, I have submitted two support tickets, numbered 88213 and 88340, which remain unresolved after a period of ten days. Given the frequency of the service interruptions and the lack of timely support, I kindly request a service credit for the inconvenience caused, as well as a detailed resolution timeline for the ongoing issues.\n\nThank you for your attention to this matter. I look forward to your prompt response.\n\nSincerely,\n\n[Your Name]  \n[Your Contact Information]  \n[Your Address]",
+      "fact_recall": 1.0,
+      "tone_accuracy": 1.0,
+      "conciseness_clarity": 0.77,
+      "overall": 0.92
+    },
+    {
+      "scenario_id": 8,
+      "intent": "Friendly check-in with a client",
+      "tone": "Friendly",
+      "generated_email": "Subject: Checking In and Exciting News!\n\nHi [Client's Name],\n\nI hope this message finds you well! It\u2019s hard to believe that it\u2019s already been three months since we completed your onboarding. I wanted to take a moment to check in and see how everything is going.\n\nI\u2019m excited to share that we launched a new feature last week: automated reporting! I believe this could really enhance your workflow and make things even easier for you. If you\u2019d like, I\u2019d be happy to offer a free 15-minute call to walk you through this new feature and answer any questions you might have.\n\nLooking forward to hearing from you!\n\nBest,  \n[Your Name]",
+      "fact_recall": 1.0,
+      "tone_accuracy": 1.0,
+      "conciseness_clarity": 0.88,
+      "overall": 0.96
+    },
+    {
+      "scenario_id": 9,
+      "intent": "Professional introduction to new point of contact",
+      "tone": "Professional",
+      "generated_email": "Subject: Introduction as Your New Account Manager\n\nDear [Recipient's Name],\n\nI hope this message finds you well. I\u2019m writing to introduce myself as your new account manager, effective next Monday. I\u2019ll be taking over from John, who will be transitioning to a different team.\n\nI\u2019m looking forward to working with you and will reach out to schedule an introductory call within my first week. Please feel free to share any immediate questions or concerns you might have.\n\nThank you, and I look forward to connecting soon.\n\nBest regards,  \n[Your Name]  \n[Your Contact Information]",
+      "fact_recall": 1.0,
+      "tone_accuracy": 1.0,
+      "conciseness_clarity": 0.93,
+      "overall": 0.98
+    },
+    {
+      "scenario_id": 10,
+      "intent": "Empathetic update about team restructuring",
+      "tone": "Empathetic",
+      "generated_email": "Subject: Important Update on Design Department Restructuring\n\nDear Team,\n\nI hope this message finds you well. I want to take a moment to address an important change within our design department that may bring a mix of feelings for all of us. \n\nAs part of our ongoing efforts to enhance our operations, the company will be restructuring the design department, effective July 1st. I understand that changes like this can be unsettling, and I want to assure you that we are committed to handling this transition with care and respect. Unfortunately, this restructuring will affect three positions, and those employees will be notified individually in the coming days.\n\nFor those impacted, we will be providing severance packages and career transition support to help ease this process. Our priority is to support our colleagues during this time and to ensure that they have the resources they need to move forward.\n\nIf you have any questions or need someone to talk to, please don\u2019t hesitate to reach out. \n\nTake care,\n\n[Your Name]",
+      "fact_recall": 1.0,
+      "tone_accuracy": 0.8,
+      "conciseness_clarity": 0.67,
+      "overall": 0.82
+    }
+  ],
+  "averages": {
+    "avg_fact_recall": 1.0,
+    "avg_tone_accuracy": 0.9,
+    "avg_conciseness_clarity": 0.85,
+    "avg_overall": 0.92
+  }
+}

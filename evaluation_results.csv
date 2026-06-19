@@ -1,0 +1,11 @@
+scenario_id,intent,tone,fact_recall,tone_accuracy,conciseness_clarity,overall
+1,Follow up after meeting,Formal,1.0,1.0,0.89,0.96
+2,Request for proposal details,Professional,1.0,1.0,0.94,0.98
+3,Apology for late delivery,Empathetic,1.0,0.8,0.85,0.88
+4,Urgent server outage notification,Urgent,1.0,0.8,0.93,0.91
+5,Persuasive partnership pitch,Persuasive,1.0,0.8,0.69,0.83
+6,Casual reminder to team about deadline,Casual,1.0,0.8,0.95,0.92
+7,Formal complaint about service issue,Formal,1.0,1.0,0.77,0.92
+8,Friendly check-in with a client,Friendly,1.0,1.0,0.88,0.96
+9,Professional introduction to new point of contact,Professional,1.0,1.0,0.93,0.98
+10,Empathetic update about team restructuring,Empathetic,1.0,0.8,0.67,0.82

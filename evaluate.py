@@ -8,7 +8,7 @@ import csv
 
 load_dotenv()
 
-API_KEY = os.getenv("GEMINI_API_KEY")
+API_KEY = os.getenv("OPENAI_API_KEY")
 SCENARIOS_PATH = "scenarios.json"
 OUTPUT_JSON = "evaluation_results.json"
 OUTPUT_CSV = "evaluation_results.csv"
@@ -84,7 +84,7 @@ def run_evaluation():
 
         report = {
         "generated_at": datetime.now().isoformat(),
-        "model": "gemini-2.5-flash",
+        "model": "gpt-4o-mini",
         "metric_definitions": METRIC_DEFINITIONS,
         "results": results,
         "averages": averages,

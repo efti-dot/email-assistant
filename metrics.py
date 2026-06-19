@@ -34,7 +34,28 @@ def fact_recall_score(generated_email: str, facts_text: str) -> float:
 
 #Custom Metric 2: Tone Accuracy (LLM-as-Judge)
 def tone_accuracy_score(generated_email: str, requested_tone: str, api_key: str) -> float:
-    judge_prompt = f"""demo prompt"""
+    judge_prompt = f"""You are an expert writing coach evaluating tone in professional emails.
+ 
+    The email below was supposed to be written in a "{requested_tone}" tone.
+    Rate how well the actual writing style — word choice, sentence structure,
+    level of formality, and emotional register — matches that tone.
+    
+    Scoring guide:
+    5 = The tone is unmistakable and consistent throughout. A reader would
+        immediately identify it as "{requested_tone}" without being told.
+    4 = The tone is clearly present and mostly consistent, with only minor
+        lapses or neutral filler sentences.
+    3 = The tone is somewhat present but inconsistent — it drifts toward
+        generic professional writing in places.
+    2 = The tone is barely noticeable. Most of the email reads as neutral
+        or generic, with only one or two tonal signals.
+    1 = The tone is absent or the opposite tone is used instead.
+    
+    Respond with ONLY a single integer between 1 and 5. No explanation.
+    
+    Email to evaluate:
+    {generated_email}
+    """
     response = call_openai(judge_prompt, api_key)
     match = re.search(r"[1-5]", response)
     score = int(match.group()) if match else 3
@@ -56,7 +77,7 @@ def conciseness_clarity_score(generated_email: str, reference_email: str, api_ke
 
     Email:
     {generated_email}
-"""
+    """
     response = call_openai(judge_prompt, api_key)
     match = re.search(r"[1-5]", response)
     clarity_score = (int(match.group()) if match else 3) / 5

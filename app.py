@@ -20,9 +20,9 @@ def screen():
     with st.sidebar:
         st.header("Settings")
         api_key = st.text_input(
-            "Gemini API Key",
+            "OpenAI API Key",
             type="password",
-            value=os.getenv("GEMINI_API_KEY", "")
+            value=os.getenv("OPENAI_API_KEY", "")
         )
         st.caption("Your key is used only for this session and is never stored.")
 
