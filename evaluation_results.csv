@@ -1,4 +1,0 @@
-scenario_id,intent,tone,fact_recall,tone_accuracy,conciseness_clarity,overall
-1,Follow up after meeting,Formal,1.0,0.2,0.88,0.69
-2,Request for proposal details,Professional,1.0,0.2,0.92,0.71
-3,Apology for late delivery,Empathetic,1.0,0.6,0.72,0.77

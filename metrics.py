@@ -1,4 +1,4 @@
-from generator import call_gemini
+from generator import call_openai
 import re
 
 _STOPWORDS = {
@@ -35,7 +35,7 @@ def fact_recall_score(generated_email: str, facts_text: str) -> float:
 #Custom Metric 2: Tone Accuracy (LLM-as-Judge)
 def tone_accuracy_score(generated_email: str, requested_tone: str, api_key: str) -> float:
     judge_prompt = f"""demo prompt"""
-    response = call_gemini(judge_prompt, api_key)
+    response = call_openai(judge_prompt, api_key)
     match = re.search(r"[1-5]", response)
     score = int(match.group()) if match else 3
     return round(score / 5, 2)
@@ -57,7 +57,7 @@ def conciseness_clarity_score(generated_email: str, reference_email: str, api_ke
     Email:
     {generated_email}
 """
-    response = call_gemini(judge_prompt, api_key)
+    response = call_openai(judge_prompt, api_key)
     match = re.search(r"[1-5]", response)
     clarity_score = (int(match.group()) if match else 3) / 5
  
