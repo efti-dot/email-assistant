@@ -25,6 +25,22 @@ def call_openai(prompt: str) -> str:
     return response.choices[0].message.content.strip()
 
 
+METRIC_DEFINITIONS = {
+    "fact_recall": (
+        "Rule-based. For each supplied key fact, checks whether at least "
+        "60% of its meaningful keywords appear in the generated email. "
+        "Score = (facts recalled) / (total facts)."
+    ),
+    "tone_accuracy": (
+        "LLM-as-Judge. GPT-4o-mini rates 1-5 how well the email's actual "
+        "writing style matches the requested tone. Score = rating / 5."
+    ),
+    "conciseness_clarity": (
+        "Hybrid. Averages (a) a length-ratio score vs the human reference "
+        "email, and (b) an LLM clarity rating 1-5."
+    ),
+}
+
 
 def run_evaluation():
     if not API_KEY:
@@ -34,3 +50,9 @@ def run_evaluation():
         scenarios = json.load(f)
  
     results = []
+    for sc in scenarios:
+        print(f"Scenario {sc['id']:>2}: {sc['intent']} ({sc['tone']}) ... ", end="", flush=True)
+
+        #model call
+        prompt = build_prompt_modelB(sc["intent"], sc["facts"], sc["tone"])
+        generated_email = call_openai(prompt)
