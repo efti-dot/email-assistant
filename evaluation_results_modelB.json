@@ -1,0 +1,117 @@
+{
+  "model": "gpt-4o-mini",
+  "prompt_strategy": "Simple (Role-Play + CoT, no per-tone guide)",
+  "metric_definitions": {
+    "fact_recall": "Rule-based. For each supplied key fact, checks whether at least 60% of its meaningful keywords appear in the generated email. Score = (facts recalled) / (total facts).",
+    "tone_accuracy": "LLM-as-Judge. GPT-4o-mini rates 1-5 how well the email's actual writing style matches the requested tone. Score = rating / 5.",
+    "conciseness_clarity": "Hybrid. Averages (a) a length-ratio score vs the human reference email, and (b) an LLM clarity rating 1-5."
+  },
+  "results": [
+    {
+      "scenario_id": 1,
+      "intent": "Follow up after meeting",
+      "tone": "Formal",
+      "generated_email": "Sure! If you're looking for a demo prompt for a writing exercise, here are a few options you could consider:\n\n1. **Creative Writing Prompt**: \"Write a short story about a character who discovers a hidden door in their home that leads to a parallel universe. What do they find there, and how does it change their perspective on their own life?\"\n\n2. **Descriptive Writing Prompt**: \"Describe a bustling market in a foreign country. Focus on the sights, sounds, and smells, and convey the atmosphere through vivid details.\"\n\n3. **Persuasive Writing Prompt**: \"Argue for or against the implementation of a four-day workweek. What are the potential benefits and drawbacks for employees and employers?\"\n\n4. **Reflective Writing Prompt**: \"Think of a significant event in your life that changed your viewpoint. Write about that experience and how it shaped who you are today.\"\n\n5. **Dialogue Writing Prompt**: \"Write a conversation between two friends who haven't seen each other in years. What do they discuss, and what emotions surface during their reunion?\"\n\nFeel free to use any of these prompts or let me know if you have a specific theme or genre in mind!",
+      "fact_recall": 0.0,
+      "tone_accuracy": 0.4,
+      "conciseness_clarity": 0.5,
+      "overall": 0.3
+    },
+    {
+      "scenario_id": 2,
+      "intent": "Request for proposal details",
+      "tone": "Professional",
+      "generated_email": "Sure! A demo prompt is a sample question or task intended to showcase the capabilities of a system. If you're looking for examples of demo prompts for different scenarios, here are a few:\n\n1. **Creative Writing**: \"Write a short story about a time traveler who accidentally lands in a medieval town and must find a way back home.\"\n\n2. **Technical Explanation**: \"Explain how blockchain technology works in simple terms.\"\n\n3. **Recipe Generation**: \"Create a recipe for a healthy dinner that includes chicken, broccoli, and quinoa.\"\n\n4. **Learning Assistance**: \"Summarize the main themes of Shakespeare's 'Romeo and Juliet.'\"\n\n5. **Problem Solving**: \"How can I improve my time management skills for better productivity?\"\n\n6. **Personal Development**: \"What are some effective strategies for building self-confidence?\"\n\nIf you have a specific type of prompt in mind or a particular context you\u2019d like to explore, let me know!",
+      "fact_recall": 0.0,
+      "tone_accuracy": 0.6,
+      "conciseness_clarity": 0.61,
+      "overall": 0.4
+    },
+    {
+      "scenario_id": 3,
+      "intent": "Apology for late delivery",
+      "tone": "Empathetic",
+      "generated_email": "Sure! If you\u2019re looking for a demo prompt, here are a few examples based on different themes:\n\n### Creative Writing Prompt\n\"Imagine a world where emotions can be transferred between people like currency. Write a short story about a character who has the ability to take away someone\u2019s sadness and give them joy, but with unintended consequences.\"\n\n### Programming Challenge\n\"Write a function in Python that takes a list of integers and returns a new list containing only the prime numbers from the original list.\"\n\n### Business Idea Generation\n\"Brainstorm a new app that addresses the needs of remote workers. What features would it have, who is the target audience, and how would it stand out from existing solutions?\"\n\n### Personal Reflection\n\"Reflect on a time when you faced a significant challenge. What did you learn from the experience, and how did it shape your perspective on future challenges?\"\n\n### Science Fiction Scenario\n\"Describe a future where humans have successfully colonized Mars. What challenges do they face, and how do they adapt to their new environment?\"\n\nFeel free to use or modify any of these prompts for your own needs! If you have a specific focus or theme in mind, let me know, and I can provide more tailored prompts.",
+      "fact_recall": 0.0,
+      "tone_accuracy": 0.4,
+      "conciseness_clarity": 0.55,
+      "overall": 0.32
+    },
+    {
+      "scenario_id": 4,
+      "intent": "Urgent server outage notification",
+      "tone": "Urgent",
+      "generated_email": "Sure! A demo prompt is often used to illustrate how an AI like me can respond to specific types of questions or tasks. Here are a few examples of demo prompts you might consider:\n\n1. **Creative Writing**: \"Write a short story about a dragon who learns to play the piano.\"\n  \n2. **Technical Explanation**: \"Explain how a blockchain works in simple terms.\"\n\n3. **Advice**: \"What are some tips for managing time effectively while studying?\"\n\n4. **Historical Inquiry**: \"What were the main causes of World War II?\"\n\n5. **Productivity Tools**: \"What are the best apps for organizing personal tasks and projects?\"\n\nFeel free to choose one of these or provide your own prompt, and I'll be happy to respond!",
+      "fact_recall": 0.0,
+      "tone_accuracy": 0.2,
+      "conciseness_clarity": 0.76,
+      "overall": 0.32
+    },
+    {
+      "scenario_id": 5,
+      "intent": "Persuasive partnership pitch",
+      "tone": "Persuasive",
+      "generated_email": "Sure! A demo prompt typically outlines a scenario or requests information to demonstrate a particular capability or response. Here\u2019s an example of a demo prompt you might use to showcase my abilities:\n\n---\n\n**Demo Prompt:**\n\n\"Imagine you are a travel advisor. Provide a detailed itinerary for a 5-day trip to Paris for a couple celebrating their anniversary. Include recommendations for accommodations, dining options, sightseeing, and any special activities that would make their trip memorable.\"\n\n---\n\nFeel free to modify the prompt or ask for something different!",
+      "fact_recall": 0.0,
+      "tone_accuracy": 0.4,
+      "conciseness_clarity": 0.94,
+      "overall": 0.45
+    },
+    {
+      "scenario_id": 6,
+      "intent": "Casual reminder to team about deadline",
+      "tone": "Casual",
+      "generated_email": "Sure! A demo prompt is a sample request or question that showcases how to interact with an AI like me. Here\u2019s an example:\n\n**Prompt:** \"Can you provide a summary of the key themes in Shakespeare's 'Hamlet'?\"\n\n**Response:** \"Certainly! Key themes in 'Hamlet' include:\n\n1. **Madness:** The play explores both real and feigned madness, particularly through the character of Hamlet, who grapples with existential questions and his own sanity.\n  \n2. **Revenge:** The desire for vengeance drives much of the plot, as Hamlet seeks to avenge his father's murder, leading to a cycle of violence and tragedy.\n  \n3. **Mortality:** The inevitability of death is a central concern, highlighted by Hamlet's famous soliloquy, 'To be, or not to be,' and the presence of skulls in the graveyard scene.\n  \n4. **Corruption and Decay:** The imagery of disease and rot reflects the moral corruption in Denmark, particularly within the royal family.\n  \n5. **Family and Betrayal:** The dynamics within the family, including betrayal and loyalty, are crucial to the character motivations and conflicts.\n\nThese themes contribute to the play's enduring relevance and complexity.\"\n\nFeel free to ask anything else or request a different type of prompt!",
+      "fact_recall": 0.0,
+      "tone_accuracy": 0.4,
+      "conciseness_clarity": 0.5,
+      "overall": 0.3
+    },
+    {
+      "scenario_id": 7,
+      "intent": "Formal complaint about service issue",
+      "tone": "Formal",
+      "generated_email": "Sure! Here\u2019s a demo prompt you might use for various purposes:\n\n---\n\n**Prompt for Creative Writing:**\n\n\"Imagine a world where dreams can be harvested and traded like commodities. Write a short story about a dream merchant who discovers a rare dream that changes their life and the lives of others. What challenges do they face, and what moral dilemmas arise from their newfound power?\"\n\n---\n\n**Prompt for a Business Idea:**\n\n\"Propose a startup idea that leverages artificial intelligence to improve mental health support. Describe the target audience, the unique features of your service, and how you would market it to potential users.\"\n\n---\n\n**Prompt for an Educational Purpose:**\n\n\"Explain the importance of renewable energy sources in combating climate change. Discuss at least three different types of renewable energy and their potential impact on reducing carbon emissions.\"\n\n---\n\nFeel free to specify if there\u2019s a particular type of prompt you\u2019re interested in!",
+      "fact_recall": 0.0,
+      "tone_accuracy": 0.4,
+      "conciseness_clarity": 0.58,
+      "overall": 0.33
+    },
+    {
+      "scenario_id": 8,
+      "intent": "Friendly check-in with a client",
+      "tone": "Friendly",
+      "generated_email": "Sure! A demo prompt is typically a statement or question designed to showcase the capabilities of a system, like an AI language model. Here are a few examples of demo prompts you might find useful:\n\n1. **Creative Writing Prompt**: \"Write a short story about a time traveler who accidentally lands in the middle of a historical event.\"\n\n2. **Technical Explanation Prompt**: \"Explain how blockchain technology works in simple terms for someone who is not tech-savvy.\"\n\n3. **Conversational Prompt**: \"Imagine you are a customer service representative. How would you respond to a customer who is unhappy with their recent purchase?\"\n\n4. **Persuasive Writing Prompt**: \"Draft a persuasive letter to a local government asking for more green spaces in urban areas.\"\n\n5. **Educational Prompt**: \"Teach me the basics of photosynthesis in a way that a fifth grader would understand.\"\n\nLet me know if you would like help with a specific type of prompt!",
+      "fact_recall": 0.0,
+      "tone_accuracy": 0.4,
+      "conciseness_clarity": 0.64,
+      "overall": 0.35
+    },
+    {
+      "scenario_id": 9,
+      "intent": "Professional introduction to new point of contact",
+      "tone": "Professional",
+      "generated_email": "Sure! If you're looking for a demo prompt to showcase a certain capability or feature, here are a few examples tailored for different contexts:\n\n1. **Creative Writing Prompt**:\n   \"Write a short story about a time traveler who accidentally lands in a world where dreams are traded as currency.\"\n\n2. **Technical Writing Prompt**:\n   \"Explain the concept of blockchain technology to someone with no technical background. Use analogies and simple language.\"\n\n3. **Marketing Prompt**:\n   \"Create a catchy tagline for a new eco-friendly water bottle that keeps drinks cold for 24 hours and hot for 12 hours.\"\n\n4. **Personal Development Prompt**:\n   \"List three habits that could improve your productivity and explain how you would implement them in your daily routine.\"\n\n5. **Educational Prompt**:\n   \"Describe the process of photosynthesis in a way that a 10-year-old would understand, using a fun analogy.\"\n\nFeel free to let me know if you have a specific context or topic in mind!",
+      "fact_recall": 0.0,
+      "tone_accuracy": 0.6,
+      "conciseness_clarity": 0.56,
+      "overall": 0.39
+    },
+    {
+      "scenario_id": 10,
+      "intent": "Empathetic update about team restructuring",
+      "tone": "Empathetic",
+      "generated_email": "Sure! If you're looking for a demo prompt for a specific purpose or topic, please provide some details. For instance, do you want a writing prompt, a coding prompt, a creative storytelling prompt, or something else? Let me know, and I'll generate a suitable demo prompt for you!",
+      "fact_recall": 0.0,
+      "tone_accuracy": 0.4,
+      "conciseness_clarity": 0.74,
+      "overall": 0.38
+    }
+  ],
+  "averages": {
+    "avg_fact_recall": 0.0,
+    "avg_tone_accuracy": 0.42,
+    "avg_conciseness_clarity": 0.64,
+    "avg_overall": 0.35
+  }
+}

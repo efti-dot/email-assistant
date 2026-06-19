@@ -87,7 +87,6 @@ def run_evaluation():
     }
 
     report = {
-        "generated_at":       datetime.now().isoformat(),
         "model":              "gpt-4o-mini",
         "prompt_strategy":    "Simple (Role-Play + CoT, no per-tone guide)",
         "metric_definitions": METRIC_DEFINITIONS,
