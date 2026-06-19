@@ -5,6 +5,7 @@ from generator import generate_email
 from metrics import fact_recall_score, tone_accuracy_score, conciseness_clarity_score
 from datetime import datetime
 import csv
+import time
 
 load_dotenv()
 
@@ -45,24 +46,23 @@ def run_evaluation():
 
     results = []
 
-    for sc in scenarios:
+    for i, sc in enumerate(scenarios):
         print(f"Scenario {sc['id']:>2}: {sc['intent']} ({sc['tone']}) ... ", end="", flush=True)
-
+ 
         generated_email, _ = generate_email(
             intent=sc["intent"],
             facts=sc["facts"],
             tone=sc["tone"],
             api_key=API_KEY,
         )
-
+ 
         frs = fact_recall_score(generated_email, sc["facts"])
         tas = tone_accuracy_score(generated_email, sc["tone"], API_KEY)
         ccs = conciseness_clarity_score(generated_email, sc["human_reference_email"], API_KEY)
         overall = round((frs + tas + ccs) / 3, 2)
-
+ 
         print(f"fact_recall={frs} tone_accuracy={tas} conciseness_clarity={ccs} overall={overall}")
-
-        #appending all the result togather
+ 
         results.append({
             "scenario_id": sc["id"],
             "intent": sc["intent"],
@@ -73,6 +73,11 @@ def run_evaluation():
             "conciseness_clarity": ccs,
             "overall": overall,
         })
+ 
+        if i < len(scenarios) - 1:
+            print(f"  [Waiting 20s before next scenario...]")
+            time.sleep(20)
+
         n = len(results)
         
         averages = {
