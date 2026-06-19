@@ -56,3 +56,22 @@ def run_evaluation():
         #model call
         prompt = build_prompt_modelB(sc["intent"], sc["facts"], sc["tone"])
         generated_email = call_openai(prompt)
+
+        #score
+        frs      = fact_recall_score(generated_email, sc["facts"])
+        tas      = tone_accuracy_score(generated_email, sc["tone"], API_KEY)
+        ccs      = conciseness_clarity_score(generated_email, sc["human_reference_email"], API_KEY)
+        overall = round((frs + tas + ccs) / 3, 2)
+ 
+        print(f"fact_recall={frs} tone_accuracy={tas} conciseness_clarity={ccs} overall={overall}")
+ 
+        results.append({
+            "scenario_id":         sc["id"],
+            "intent":              sc["intent"],
+            "tone":                sc["tone"],
+            "generated_email":     generated_email,
+            "fact_recall":         frs,
+            "tone_accuracy":       tas,
+            "conciseness_clarity": ccs,
+            "overall":             overall,
+        })
