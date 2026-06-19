@@ -2,6 +2,7 @@ from metrics import fact_recall_score, tone_accuracy_score, conciseness_clarity_
 from openai import OpenAI
 from dotenv import load_dotenv
 import os
+import json
 
 load_dotenv()
 API_KEY = os.getenv("OPENAI_API_KEY")
@@ -22,3 +23,14 @@ def call_openai(prompt: str) -> str:
         temperature=0.7,
     )
     return response.choices[0].message.content.strip()
+
+
+
+def run_evaluation():
+    if not API_KEY:
+        raise RuntimeError("OPENAI_API_KEY not found in .env file.")
+ 
+    with open(SCENARIOS_PATH, "r", encoding="utf-8") as f:
+        scenarios = json.load(f)
+ 
+    results = []
