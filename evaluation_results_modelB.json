@@ -11,107 +11,107 @@
       "scenario_id": 1,
       "intent": "Follow up after meeting",
       "tone": "Formal",
-      "generated_email": "Sure! If you're looking for a demo prompt for a writing exercise, here are a few options you could consider:\n\n1. **Creative Writing Prompt**: \"Write a short story about a character who discovers a hidden door in their home that leads to a parallel universe. What do they find there, and how does it change their perspective on their own life?\"\n\n2. **Descriptive Writing Prompt**: \"Describe a bustling market in a foreign country. Focus on the sights, sounds, and smells, and convey the atmosphere through vivid details.\"\n\n3. **Persuasive Writing Prompt**: \"Argue for or against the implementation of a four-day workweek. What are the potential benefits and drawbacks for employees and employers?\"\n\n4. **Reflective Writing Prompt**: \"Think of a significant event in your life that changed your viewpoint. Write about that experience and how it shaped who you are today.\"\n\n5. **Dialogue Writing Prompt**: \"Write a conversation between two friends who haven't seen each other in years. What do they discuss, and what emotions surface during their reunion?\"\n\nFeel free to use any of these prompts or let me know if you have a specific theme or genre in mind!",
-      "fact_recall": 0.0,
-      "tone_accuracy": 0.4,
-      "conciseness_clarity": 0.5,
-      "overall": 0.3
+      "generated_email": "Subject: Follow-Up on June 10th Meeting\n\nDear [Client's Name],\n\nI hope this message finds you well. I am writing to follow up on our meeting held on June 10th, during which we discussed the Q3 marketing budget.\n\nAs per our conversation, you requested a detailed breakdown of the proposed ad spend. We are currently working on this and will ensure to send the updated proposal to you by Friday, June 19th.\n\nThank you for your attention to this matter. Should you have any further questions or require additional information in the meantime, please do not hesitate to reach out.\n\nBest regards,\n\n[Your Name]  \n[Your Position]  \n[Your Contact Information]  \n[Your Company]",
+      "fact_recall": 1.0,
+      "tone_accuracy": 0.8,
+      "conciseness_clarity": 0.88,
+      "overall": 0.89
     },
     {
       "scenario_id": 2,
       "intent": "Request for proposal details",
       "tone": "Professional",
-      "generated_email": "Sure! A demo prompt is a sample question or task intended to showcase the capabilities of a system. If you're looking for examples of demo prompts for different scenarios, here are a few:\n\n1. **Creative Writing**: \"Write a short story about a time traveler who accidentally lands in a medieval town and must find a way back home.\"\n\n2. **Technical Explanation**: \"Explain how blockchain technology works in simple terms.\"\n\n3. **Recipe Generation**: \"Create a recipe for a healthy dinner that includes chicken, broccoli, and quinoa.\"\n\n4. **Learning Assistance**: \"Summarize the main themes of Shakespeare's 'Romeo and Juliet.'\"\n\n5. **Problem Solving**: \"How can I improve my time management skills for better productivity?\"\n\n6. **Personal Development**: \"What are some effective strategies for building self-confidence?\"\n\nIf you have a specific type of prompt in mind or a particular context you\u2019d like to explore, let me know!",
-      "fact_recall": 0.0,
-      "tone_accuracy": 0.6,
-      "conciseness_clarity": 0.61,
-      "overall": 0.4
+      "generated_email": "Subject: Clarification Needed on Office Renovation Proposal\n\nDear [Recipient's Name],\n\nI hope this message finds you well. I am reaching out regarding the proposal we received on June 12th for the office renovation project.\n\nUpon reviewing the document, I noticed that the pricing section does not specify a timeline for completion. Additionally, I would appreciate clarification on whether the quoted amount includes materials, labor, or both. This information will be crucial for our planning process.\n\nThank you for your attention to these matters. I look forward to your prompt response.\n\nBest regards,  \n[Your Name]  \n[Your Position]  \n[Your Company]  \n[Your Contact Information]",
+      "fact_recall": 1.0,
+      "tone_accuracy": 1.0,
+      "conciseness_clarity": 0.87,
+      "overall": 0.96
     },
     {
       "scenario_id": 3,
       "intent": "Apology for late delivery",
       "tone": "Empathetic",
-      "generated_email": "Sure! If you\u2019re looking for a demo prompt, here are a few examples based on different themes:\n\n### Creative Writing Prompt\n\"Imagine a world where emotions can be transferred between people like currency. Write a short story about a character who has the ability to take away someone\u2019s sadness and give them joy, but with unintended consequences.\"\n\n### Programming Challenge\n\"Write a function in Python that takes a list of integers and returns a new list containing only the prime numbers from the original list.\"\n\n### Business Idea Generation\n\"Brainstorm a new app that addresses the needs of remote workers. What features would it have, who is the target audience, and how would it stand out from existing solutions?\"\n\n### Personal Reflection\n\"Reflect on a time when you faced a significant challenge. What did you learn from the experience, and how did it shape your perspective on future challenges?\"\n\n### Science Fiction Scenario\n\"Describe a future where humans have successfully colonized Mars. What challenges do they face, and how do they adapt to their new environment?\"\n\nFeel free to use or modify any of these prompts for your own needs! If you have a specific focus or theme in mind, let me know, and I can provide more tailored prompts.",
-      "fact_recall": 0.0,
-      "tone_accuracy": 0.4,
-      "conciseness_clarity": 0.55,
-      "overall": 0.32
+      "generated_email": "Subject: Apology for Delay in Your Order\n\nDear [Customer's Name],\n\nI hope this message finds you well. I am reaching out to sincerely apologize for the delay in the delivery of your order #4521. While we had anticipated shipping it by June 5th, it was unfortunately shipped on June 14th due to a supplier shortage of raw materials.\n\nWe understand how important timely deliveries are to our customers, and we deeply regret any inconvenience this may have caused. As a gesture of our commitment to you, we have applied a 15% discount to your next order.\n\nThank you for your understanding and support. If you have any further questions or concerns, please do not hesitate to reach out.\n\nWarm regards,\n\n[Your Name]  \n[Your Position]  \n[Your Company]  \n[Your Contact Information]",
+      "fact_recall": 1.0,
+      "tone_accuracy": 0.8,
+      "conciseness_clarity": 0.92,
+      "overall": 0.91
     },
     {
       "scenario_id": 4,
       "intent": "Urgent server outage notification",
       "tone": "Urgent",
-      "generated_email": "Sure! A demo prompt is often used to illustrate how an AI like me can respond to specific types of questions or tasks. Here are a few examples of demo prompts you might consider:\n\n1. **Creative Writing**: \"Write a short story about a dragon who learns to play the piano.\"\n  \n2. **Technical Explanation**: \"Explain how a blockchain works in simple terms.\"\n\n3. **Advice**: \"What are some tips for managing time effectively while studying?\"\n\n4. **Historical Inquiry**: \"What were the main causes of World War II?\"\n\n5. **Productivity Tools**: \"What are the best apps for organizing personal tasks and projects?\"\n\nFeel free to choose one of these or provide your own prompt, and I'll be happy to respond!",
-      "fact_recall": 0.0,
-      "tone_accuracy": 0.2,
-      "conciseness_clarity": 0.76,
-      "overall": 0.32
+      "generated_email": "Subject: Urgent: Production Server Outage Notification\n\nDear Team,\n\nI am writing to inform you of an urgent situation regarding our production servers. At 2:14 AM, we experienced a server outage due to a database failover error. \n\nThe engineering team is currently working diligently to resolve the issue, and we anticipate a fix within the next 30 minutes. In the meantime, please note that our customer-facing status page has been updated with live progress on this matter.\n\nYour immediate attention to this situation is appreciated. Please let me know if you have any questions.\n\nBest regards,  \n[Your Name]  \n[Your Position]",
+      "fact_recall": 1.0,
+      "tone_accuracy": 0.8,
+      "conciseness_clarity": 0.87,
+      "overall": 0.89
     },
     {
       "scenario_id": 5,
       "intent": "Persuasive partnership pitch",
       "tone": "Persuasive",
-      "generated_email": "Sure! A demo prompt typically outlines a scenario or requests information to demonstrate a particular capability or response. Here\u2019s an example of a demo prompt you might use to showcase my abilities:\n\n---\n\n**Demo Prompt:**\n\n\"Imagine you are a travel advisor. Provide a detailed itinerary for a 5-day trip to Paris for a couple celebrating their anniversary. Include recommendations for accommodations, dining options, sightseeing, and any special activities that would make their trip memorable.\"\n\n---\n\nFeel free to modify the prompt or ask for something different!",
-      "fact_recall": 0.0,
-      "tone_accuracy": 0.4,
-      "conciseness_clarity": 0.94,
-      "overall": 0.45
+      "generated_email": "Subject: Exciting Partnership Opportunity  \n\nDear [Recipient's Name],  \n\nI hope this message finds you well. I am reaching out to explore a potential partnership that could significantly enhance our mutual growth in the fitness app space.  \n\nWith Company X boasting 2 million monthly active users, we have a substantial platform to engage fitness enthusiasts. I believe that a co-marketing campaign between our organizations could be remarkably beneficial. We can launch this initiative within just three weeks, allowing us to quickly tap into our combined resources and reach. Past partnerships in this domain have resulted in a 22% increase in user acquisition for our collaborators, and I am confident we can achieve similar, if not greater, success together.  \n\nI would love to discuss this opportunity further and explore how we can work together to maximize our impact in the market. Please let me know a convenient time for you to connect.  \n\nLooking forward to your thoughts.  \n\nBest regards,  \n[Your Name]  \n[Your Position]  \n[Your Company]  \n[Your Contact Information]",
+      "fact_recall": 1.0,
+      "tone_accuracy": 0.8,
+      "conciseness_clarity": 0.65,
+      "overall": 0.82
     },
     {
       "scenario_id": 6,
       "intent": "Casual reminder to team about deadline",
       "tone": "Casual",
-      "generated_email": "Sure! A demo prompt is a sample request or question that showcases how to interact with an AI like me. Here\u2019s an example:\n\n**Prompt:** \"Can you provide a summary of the key themes in Shakespeare's 'Hamlet'?\"\n\n**Response:** \"Certainly! Key themes in 'Hamlet' include:\n\n1. **Madness:** The play explores both real and feigned madness, particularly through the character of Hamlet, who grapples with existential questions and his own sanity.\n  \n2. **Revenge:** The desire for vengeance drives much of the plot, as Hamlet seeks to avenge his father's murder, leading to a cycle of violence and tragedy.\n  \n3. **Mortality:** The inevitability of death is a central concern, highlighted by Hamlet's famous soliloquy, 'To be, or not to be,' and the presence of skulls in the graveyard scene.\n  \n4. **Corruption and Decay:** The imagery of disease and rot reflects the moral corruption in Denmark, particularly within the royal family.\n  \n5. **Family and Betrayal:** The dynamics within the family, including betrayal and loyalty, are crucial to the character motivations and conflicts.\n\nThese themes contribute to the play's enduring relevance and complexity.\"\n\nFeel free to ask anything else or request a different type of prompt!",
-      "fact_recall": 0.0,
-      "tone_accuracy": 0.4,
-      "conciseness_clarity": 0.5,
-      "overall": 0.3
+      "generated_email": "Subject: Quick Reminder: Q3 Report Deadline\n\nHey Team,\n\nJust a friendly reminder that the draft of the Q3 report is due this Friday. I wanted to highlight that we still need the final numbers for the marketing and finance sections, so let\u2019s make sure we have those sorted out.\n\nDon\u2019t forget, we have a quick sync call scheduled for tomorrow at 10am to go over everything. Looking forward to catching up then!\n\nThanks,  \n[Your Name]",
+      "fact_recall": 1.0,
+      "tone_accuracy": 0.8,
+      "conciseness_clarity": 0.95,
+      "overall": 0.92
     },
     {
       "scenario_id": 7,
       "intent": "Formal complaint about service issue",
       "tone": "Formal",
-      "generated_email": "Sure! Here\u2019s a demo prompt you might use for various purposes:\n\n---\n\n**Prompt for Creative Writing:**\n\n\"Imagine a world where dreams can be harvested and traded like commodities. Write a short story about a dream merchant who discovers a rare dream that changes their life and the lives of others. What challenges do they face, and what moral dilemmas arise from their newfound power?\"\n\n---\n\n**Prompt for a Business Idea:**\n\n\"Propose a startup idea that leverages artificial intelligence to improve mental health support. Describe the target audience, the unique features of your service, and how you would market it to potential users.\"\n\n---\n\n**Prompt for an Educational Purpose:**\n\n\"Explain the importance of renewable energy sources in combating climate change. Discuss at least three different types of renewable energy and their potential impact on reducing carbon emissions.\"\n\n---\n\nFeel free to specify if there\u2019s a particular type of prompt you\u2019re interested in!",
-      "fact_recall": 0.0,
-      "tone_accuracy": 0.4,
-      "conciseness_clarity": 0.58,
-      "overall": 0.33
+      "generated_email": "Subject: Formal Complaint Regarding Service Issues\n\nDear [Recipient's Name],\n\nI hope this message finds you well. I am writing to formally express my dissatisfaction with the internet service I have been receiving over the past two weeks, during which time I have experienced five outages.\n\nFurthermore, I have submitted two support tickets, numbered #88213 and #88340, which remain unresolved after ten days. Given the recurring nature of these issues, I kindly request a service credit for the disruptions and would appreciate a clear timeline for the resolution of these matters.\n\nThank you for your attention to this issue. I look forward to your prompt response.\n\nSincerely,  \n[Your Name]  \n[Your Contact Information]",
+      "fact_recall": 1.0,
+      "tone_accuracy": 0.8,
+      "conciseness_clarity": 0.82,
+      "overall": 0.87
     },
     {
       "scenario_id": 8,
       "intent": "Friendly check-in with a client",
       "tone": "Friendly",
-      "generated_email": "Sure! A demo prompt is typically a statement or question designed to showcase the capabilities of a system, like an AI language model. Here are a few examples of demo prompts you might find useful:\n\n1. **Creative Writing Prompt**: \"Write a short story about a time traveler who accidentally lands in the middle of a historical event.\"\n\n2. **Technical Explanation Prompt**: \"Explain how blockchain technology works in simple terms for someone who is not tech-savvy.\"\n\n3. **Conversational Prompt**: \"Imagine you are a customer service representative. How would you respond to a customer who is unhappy with their recent purchase?\"\n\n4. **Persuasive Writing Prompt**: \"Draft a persuasive letter to a local government asking for more green spaces in urban areas.\"\n\n5. **Educational Prompt**: \"Teach me the basics of photosynthesis in a way that a fifth grader would understand.\"\n\nLet me know if you would like help with a specific type of prompt!",
-      "fact_recall": 0.0,
-      "tone_accuracy": 0.4,
-      "conciseness_clarity": 0.64,
-      "overall": 0.35
+      "generated_email": "Subject: Checking In and Exciting New Feature!\n\nHi [Client's Name],\n\nI hope this message finds you well! It\u2019s hard to believe that it\u2019s been three months since your onboarding was completed. I wanted to check in and see how everything is going for you.\n\nI\u2019m excited to share that we launched a new feature last week: automated reporting! I believe this could really streamline your workflow. If you\u2019d like, I\u2019d be happy to offer you a free 15-minute call to walk you through how it works and answer any questions you might have.\n\nLooking forward to hearing from you!\n\nBest,  \n[Your Name]  \n[Your Position]  \n[Your Company]  \n[Your Contact Information]",
+      "fact_recall": 1.0,
+      "tone_accuracy": 1.0,
+      "conciseness_clarity": 0.88,
+      "overall": 0.96
     },
     {
       "scenario_id": 9,
       "intent": "Professional introduction to new point of contact",
       "tone": "Professional",
-      "generated_email": "Sure! If you're looking for a demo prompt to showcase a certain capability or feature, here are a few examples tailored for different contexts:\n\n1. **Creative Writing Prompt**:\n   \"Write a short story about a time traveler who accidentally lands in a world where dreams are traded as currency.\"\n\n2. **Technical Writing Prompt**:\n   \"Explain the concept of blockchain technology to someone with no technical background. Use analogies and simple language.\"\n\n3. **Marketing Prompt**:\n   \"Create a catchy tagline for a new eco-friendly water bottle that keeps drinks cold for 24 hours and hot for 12 hours.\"\n\n4. **Personal Development Prompt**:\n   \"List three habits that could improve your productivity and explain how you would implement them in your daily routine.\"\n\n5. **Educational Prompt**:\n   \"Describe the process of photosynthesis in a way that a 10-year-old would understand, using a fun analogy.\"\n\nFeel free to let me know if you have a specific context or topic in mind!",
-      "fact_recall": 0.0,
-      "tone_accuracy": 0.6,
-      "conciseness_clarity": 0.56,
-      "overall": 0.39
+      "generated_email": "Subject: Introduction as Your New Account Manager\n\nDear [Recipient's Name],\n\nI hope this message finds you well. I am writing to introduce myself as the new account manager for your account, effective next Monday. I will be taking over from John, who is transitioning to a different team.\n\nI look forward to collaborating with you and will reach out within the first week to schedule an introductory call. Please feel free to reach out if you have any immediate questions or concerns.\n\nThank you, and I look forward to working together.\n\nBest regards,\n\n[Your Name]  \n[Your Position]  \n[Your Contact Information]  \n[Your Company]",
+      "fact_recall": 1.0,
+      "tone_accuracy": 1.0,
+      "conciseness_clarity": 0.87,
+      "overall": 0.96
     },
     {
       "scenario_id": 10,
       "intent": "Empathetic update about team restructuring",
       "tone": "Empathetic",
-      "generated_email": "Sure! If you're looking for a demo prompt for a specific purpose or topic, please provide some details. For instance, do you want a writing prompt, a coding prompt, a creative storytelling prompt, or something else? Let me know, and I'll generate a suitable demo prompt for you!",
-      "fact_recall": 0.0,
-      "tone_accuracy": 0.4,
-      "conciseness_clarity": 0.74,
-      "overall": 0.38
+      "generated_email": "Subject: Important Update on Design Department Restructuring\n\nDear Team,\n\nI hope this message finds you well. I wanted to take a moment to update you on some important changes happening within our design department.\n\nAs part of our ongoing efforts to enhance our operations, we will be restructuring the design department, effective July 1st. This change will impact three positions, and I want to assure you that those affected will be notified individually in a timely manner. We understand that this news can be difficult, and I want to emphasize that severance packages and career transition support will be provided to those impacted, as we are committed to supporting our colleagues during this transition.\n\nIf you have any questions or need to talk about this further, please don\u2019t hesitate to reach out. Your well-being and understanding are our top priorities during this process.\n\nThank you for your continued dedication to our team.\n\nWarm regards,\n\n[Your Name]  \n[Your Position]",
+      "fact_recall": 1.0,
+      "tone_accuracy": 0.8,
+      "conciseness_clarity": 0.73,
+      "overall": 0.84
     }
   ],
   "averages": {
-    "avg_fact_recall": 0.0,
-    "avg_tone_accuracy": 0.42,
-    "avg_conciseness_clarity": 0.64,
-    "avg_overall": 0.35
+    "avg_fact_recall": 1.0,
+    "avg_tone_accuracy": 0.86,
+    "avg_conciseness_clarity": 0.84,
+    "avg_overall": 0.9
   }
 }

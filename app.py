@@ -83,8 +83,7 @@ def screen():
                 value=st.session_state["generated_email"],
                 height=300
             )
-            with st.expander("View the prompt"):
-                st.code(st.session_state["last_prompt"], language="text")
+            
 
 
 
