@@ -75,3 +75,13 @@ def run_evaluation():
             "conciseness_clarity": ccs,
             "overall":             overall,
         })
+
+    n = len(results)
+    averages = {
+            "avg_fact_recall":         round(sum(r["fact_recall"] for r in results) / n, 2),
+            "avg_tone_accuracy":       round(sum(r["tone_accuracy"] for r in results) / n, 2),
+            "avg_conciseness_clarity": round(sum(r["conciseness_clarity"] for r in results) / n, 2),
+            "avg_overall":             round(sum(r["overall"] for r in results) / n, 2),
+    }
+
+    
