@@ -20,7 +20,7 @@ email-assistant/
 ├── evaluation_results_modelB.json  # Model B full report
 ├── evaluation_results_modelB.csv   # Model B scores
 ├── requirements.txt                # Python dependencies
-├── .env.example                    # Template for API key
+├── .env                            # Template for API key
 └── README.md
 ```
 
